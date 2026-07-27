@@ -1,7 +1,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
-  name: web-repo
+  name: nginx-repo
   namespace: flux-system
 spec:
   interval: 1m
