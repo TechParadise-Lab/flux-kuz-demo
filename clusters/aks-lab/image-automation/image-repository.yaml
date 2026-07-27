@@ -6,5 +6,3 @@ metadata:
 spec:
   interval: 1m
   image: fluximages.azurecr.io/nginx
-  secretRef:
-    name: registry-credentials
