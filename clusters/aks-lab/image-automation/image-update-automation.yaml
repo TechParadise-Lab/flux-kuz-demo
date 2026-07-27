@@ -7,7 +7,7 @@ spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: k8s-demo
+    name: flux-system
   git:
     checkout:
       ref:
