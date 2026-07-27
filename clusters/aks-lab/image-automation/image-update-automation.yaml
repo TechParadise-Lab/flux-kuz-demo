@@ -4,16 +4,20 @@ metadata:
   name: web-image-automation
   namespace: flux-system
 spec:
-  checkout:
-    gitRepositoryRef:
-      name: k8s-demo
   interval: 1m
-  update:
-    strategy: Setters
-  commit:
-    authorName: fluxcdbot
-    authorEmail: fluxcdbot@example.com
+  sourceRef:
+    kind: GitRepository
+    name: k8s-demo
   git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        name: fluxcdbot
+        email: fluxcdbot@example.com
     push:
       branch: main
-  path: ./kustomize-lab/base
+  update:
+    path: ./kustomize-lab/base
+    strategy: Setters
