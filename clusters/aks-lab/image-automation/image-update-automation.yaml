@@ -16,6 +16,4 @@ spec:
   git:
     push:
       branch: main
-  # Make sure this path points to the directory containing the Kustomize manifests you want to update.
   path: ./kustomize-lab/base
-  # Alternative: ./kustomize-lab if you want the automation to update higher-level files
