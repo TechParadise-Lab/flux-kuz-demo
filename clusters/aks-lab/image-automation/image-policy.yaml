@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: web-repo
+    name: nginx-repo
   policy:
     semver:
       range: ">= 1.0.0"
