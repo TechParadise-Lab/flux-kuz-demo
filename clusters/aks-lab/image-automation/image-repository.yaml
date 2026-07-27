@@ -5,6 +5,6 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  image: myregistry.azurecr.io/web
+  image: fluximages.azurecr.io/nginx
   secretRef:
     name: registry-credentials
