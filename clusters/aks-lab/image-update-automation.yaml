@@ -1,0 +1,21 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: web-image-automation
+  namespace: flux-system
+spec:
+  checkout:
+    gitRepositoryRef:
+      name: k8s-demo
+  interval: 1m
+  update:
+    strategy: Setters
+  commit:
+    authorName: fluxcdbot
+    authorEmail: fluxcdbot@example.com
+  git:
+    push:
+      branch: main
+  # Make sure this path points to the directory containing the Kustomize manifests you want to update.
+  path: ./kustomize-lab/base
+  # Alternative: ./kustomize-lab if you want the automation to update higher-level files

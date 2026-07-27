@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: web-repo
+  namespace: flux-system
+spec:
+  interval: 1m
+  image: myregistry.azurecr.io/web
+  secretRef:
+    name: registry-credentials
