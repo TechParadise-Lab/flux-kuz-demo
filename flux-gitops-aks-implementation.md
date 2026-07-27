@@ -203,7 +203,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://github.com/<github-user-or-org>/k8s-demo.git
+  url: https://github.com/TechParadise-Lab/flux-kuz-demo.git
   ref:
     branch: main
 ```

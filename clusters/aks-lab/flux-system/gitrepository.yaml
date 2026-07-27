@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: k8s-demo
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/TechParadise-Lab/flux-kuz-demo.git
+  ref:
+    branch: main
