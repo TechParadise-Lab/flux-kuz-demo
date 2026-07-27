@@ -6,3 +6,4 @@ metadata:
 spec:
   interval: 1m
   image: fluximages.azurecr.io/nginx
+  provider: azure
